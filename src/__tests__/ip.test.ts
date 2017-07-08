@@ -1,8 +1,8 @@
-import * as fetchMock from 'fetch-mock';
+import * as nock from 'nock';
 
 import { v4 } from '../ip';
 
-fetchMock.get('http://ipv4.icanhazip.com/', '1.2.3.4');
+nock('http://ipv4.icanhazip.com').get('/').reply(200, '1.2.3.4');
 
 test('v4', async () => {
   const ip = await v4();
