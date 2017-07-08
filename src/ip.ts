@@ -1,13 +1,19 @@
 import fetch from 'node-fetch';
 
-export async function v4() {
+function extractIp(rawText: string) {
+  return rawText.replace(/\s+/g, '');
+}
+
+export async function v4(): Promise<string> {
   const request = await fetch('http://ipv4.icanhazip.com/');
-  const ip = request.text();
+  const text = await request.text();
+  const ip = extractIp(text);
   return ip;
 }
 
-export async function v6() {
+export async function v6(): Promise<string> {
   const request = await fetch('http://ipv6.icanhazip.com');
-  const ip = request.text();
+  const text = await request.text();
+  const ip = extractIp(text);
   return ip;
 }
