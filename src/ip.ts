@@ -5,3 +5,9 @@ export async function v4() {
   const ip = request.text();
   return ip;
 }
+
+export async function v6() {
+  const request = await fetch('http://ipv6.icanhazip.com');
+  const ip = request.text();
+  return ip;
+}
