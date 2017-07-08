@@ -41,11 +41,12 @@
   },
   "homepage": "https://github.com/zurfyx/what-is-my-ip-address#readme",
   "dependencies": {
-    "@types/node": "^8.0.0",
     "tslib": "^1.7.1"
   },
   "devDependencies": {
+    "@types/fetch-mock": "^5.8.2",
     "@types/jest": "^20.0.0",
+    "fetch-mock": "^5.12.1",
     "jest": "^20.0.4",
     "npm-run-all": "^4.0.2",
     "rimraf": "^2.6.1",
