@@ -1,12 +1,12 @@
 {
-  "name": "typescript-starter-kit",
+  "name": "what-is-my-ip-address",
   "description": "TypeScript Starter Kit",
   "author": {
     "name": "Gerard Rovira Sánchez",
     "email": "zurfyx@gmail.com",
     "url": "zurfyx.com"
   },
-  "version": "1.0.3",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -24,18 +24,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zurfyx/typescript-starter-kit.git"
+    "url": "git+https://github.com/zurfyx/what-is-my-ip-address.git"
   },
   "keywords": [
-    "typescript",
-    "starter",
-    "library"
+    "ip",
+    "address",
+    "ipv4",
+    "ipv6",
+    "external",
+    "public",
+    "typescript"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zurfyx/typescript-starter-kit/issues"
+    "url": "https://github.com/zurfyx/what-is-my-ip-address/issues"
   },
-  "homepage": "https://github.com/zurfyx/typescript-starter-kit#readme",
+  "homepage": "https://github.com/zurfyx/what-is-my-ip-address#readme",
   "dependencies": {
     "@types/node": "^8.0.0",
     "tslib": "^1.7.1"
