@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import 'isomorphic-fetch';
 
 function extractIp(rawText: string) {
   return rawText.replace(/\s+/g, '');

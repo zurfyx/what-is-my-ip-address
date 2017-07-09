@@ -6,7 +6,7 @@
     "email": "zurfyx@gmail.com",
     "url": "zurfyx.com"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -41,8 +41,8 @@
   },
   "homepage": "https://github.com/zurfyx/what-is-my-ip-address#readme",
   "dependencies": {
-    "@types/node-fetch": "^1.6.7",
-    "node-fetch": "^1.7.1",
+    "@types/isomorphic-fetch": "0.0.34",
+    "isomorphic-fetch": "^2.2.1",
     "tslib": "^1.7.1"
   },
   "devDependencies": {
