@@ -2,8 +2,8 @@ import * as nock from 'nock';
 
 import { v4, v6 } from '../ip';
 
-nock('http://ipv4.icanhazip.com').get('/').reply(200, '1.2.3.4\n');
-nock('http://ipv6.icanhazip.com').get('/').reply(200, '2001:0db8:85a3:0000:0000:8a2e:0370:7334\n');
+nock('https://ipv4.icanhazip.com').get('/').reply(200, '1.2.3.4\n');
+nock('https://ipv6.icanhazip.com').get('/').reply(200, '2001:0db8:85a3:0000:0000:8a2e:0370:7334\n');
 
 test('v4', async () => {
   const ip = await v4();
